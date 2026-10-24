@@ -29,11 +29,10 @@ dashboard.
 
 ## 2. Team & college
 
-> **TODO:** Replace with your names and affiliation before submitting.
 
-- **Name 1** — Role — College
-- **Name 2** — Role — College
-- **Name 3** — Role — College
+- **Name 1** — Sushma Shukla
+- **Name 2** — Apurva Raj
+
 
 ## 3. Track
 

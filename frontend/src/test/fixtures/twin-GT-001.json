@@ -1,0 +1,149 @@
+{
+  "patient_id": "GT-001",
+  "data_label": "synthetic",
+  "last_updated": "2026-10-18T13:40:16+00:00",
+  "simulated_time": "2026-09-07 06:55:00",
+  "observed_rows": 1812,
+  "total_rows": 2016,
+  "buffer_rows_remaining": 204,
+  "latest_reading": {
+    "timestamp": "2026-09-07 06:55:00",
+    "glucose_mg_dl": 124.5,
+    "heart_rate_bpm": 70.3,
+    "steps_5min": 0,
+    "meal_event": 0,
+    "minutes_since_meal": 690,
+    "source": "synthetic_sensor_feed",
+    "data_label": "synthetic"
+  },
+  "sensor_feed": {
+    "type": "synthetic_replay",
+    "last_reading_timestamp": "2026-09-07 06:55:00",
+    "minutes_between_readings": 5,
+    "freshness": "updated_on_simulated_advance"
+  },
+  "window_used": {
+    "start": "2026-09-07 06:00:00",
+    "end": "2026-09-07 06:55:00",
+    "rows": 12,
+    "columns": [
+      "timestamp",
+      "glucose_mg_dl",
+      "heart_rate_bpm",
+      "steps_5min",
+      "sleep_minutes",
+      "meal_event",
+      "minutes_since_meal"
+    ]
+  },
+  "prediction": {
+    "generated_at": "2026-10-18T13:55:44+00:00",
+    "horizon_minutes": 60,
+    "predicted_glucose_mg_dl": 160.4,
+    "prediction_timestamp": "2026-09-07T07:55:00",
+    "trajectory": [
+      {
+        "timestamp": "2026-09-07T07:25:00",
+        "predicted_glucose_mg_dl": 130.9,
+        "horizon_minutes": 30,
+        "source": "model_prediction"
+      },
+      {
+        "timestamp": "2026-09-07T07:55:00",
+        "predicted_glucose_mg_dl": 160.4,
+        "horizon_minutes": 60,
+        "source": "model_prediction"
+      },
+      {
+        "timestamp": "2026-09-07T08:25:00",
+        "predicted_glucose_mg_dl": 157.6,
+        "horizon_minutes": 90,
+        "source": "model_prediction"
+      },
+      {
+        "timestamp": "2026-09-07T08:55:00",
+        "predicted_glucose_mg_dl": 153.6,
+        "horizon_minutes": 120,
+        "source": "model_prediction"
+      }
+    ],
+    "model": {
+      "version": "1.0.0",
+      "type": "gradient_boosting",
+      "framework": "scikit-learn",
+      "input_window": {
+        "window_start": "2026-09-07 06:00:00",
+        "window_end": "2026-09-07 06:55:00",
+        "window_rows": 12,
+        "static_features": {
+          "age": 58,
+          "bmi": 28.9,
+          "years_since_diagnosis": 9,
+          "hba1c_pct": 6.7
+        },
+        "context_hours_available": 24
+      },
+      "available_horizons_minutes": [
+        30,
+        60,
+        90,
+        120
+      ]
+    },
+    "source": "model_prediction",
+    "simulated_time": "2026-09-07 06:55:00",
+    "disclaimer": "Prediction generated from synthetic data by an unvalidated research prototype. Not a medical device. Not for clinical decision-making."
+  },
+  "risk": {
+    "level": "none",
+    "label": "In expected range",
+    "flags": [],
+    "thresholds": {
+      "unit": "mg/dL",
+      "hypo_low_mg_dl": 70,
+      "hypo_critical_mg_dl": 54,
+      "hyper_high_mg_dl": 180,
+      "hyper_critical_mg_dl": 250,
+      "disclaimer": "Configurable demonstration thresholds only. These values are NOT clinically validated and must not be used for diagnosis or treatment decisions. Real clinical use requires validation and oversight by a qualified clinician."
+    },
+    "assessed_values_count": 5,
+    "predicted_min_mg_dl": 124.5,
+    "predicted_max_mg_dl": 160.4
+  },
+  "model_error": null,
+  "prediction_history": [
+    {
+      "generated_at": "2026-10-18T10:11:20+00:00",
+      "horizon_minutes": 60,
+      "predicted_glucose": 160.4,
+      "model_version": "1.0.0",
+      "model_type": "gradient_boosting",
+      "window_start": "2026-09-07 06:00:00",
+      "window_end": "2026-09-07 06:55:00",
+      "window_rows": 12,
+      "source": "model_prediction"
+    },
+    {
+      "generated_at": "2026-10-18T11:55:42+00:00",
+      "horizon_minutes": 60,
+      "predicted_glucose": 160.4,
+      "model_version": "1.0.0",
+      "model_type": "gradient_boosting",
+      "window_start": "2026-09-07 06:00:00",
+      "window_end": "2026-09-07 06:55:00",
+      "window_rows": 12,
+      "source": "model_prediction"
+    },
+    {
+      "generated_at": "2026-10-18T13:40:16+00:00",
+      "horizon_minutes": 60,
+      "predicted_glucose": 160.4,
+      "model_version": "1.0.0",
+      "model_type": "gradient_boosting",
+      "window_start": "2026-09-07 06:00:00",
+      "window_end": "2026-09-07 06:55:00",
+      "window_rows": 12,
+      "source": "model_prediction"
+    }
+  ]
+}

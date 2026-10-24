@@ -1,0 +1,36 @@
+%% GlucoTwin AI — system architecture (source of truth)
+%% Render at https://mermaid.live or with the mermaid-cli.
+%% The generated architecture.png/.svg/.pdf mirror this diagram
+%% (built by docs/architecture/build_architecture_diagram.py).
+
+flowchart LR
+
+  subgraph SYNTH["SYNTHETIC-DATA BOUNDARY — educational prototype only · not clinically validated"]
+    direction TB
+    EHR[("Synthetic EHR Data\nprofiles · records · summaries")]
+    CGM[("Synthetic CGM / Wearables\n5-min time-series · steps · meals · HR")]
+    PREP["Data Validation & Preprocessing\nschema checks · gaps · features"]
+    STORE[("Storage\ndata/synthetic/*.csv\nmodels/model_h*.joblib\nmodels/metrics.json")]
+    TWIN["Digital Twin Engine\nper-patient state · replay sensor feed · window"]
+    TRAIN["Training & Evaluation\ntime-ordered 70/15/15 split\nvalidation selection · embargoed test\npersistence · Ridge · GBM"]
+    REG["Model Registry\nper-horizon artifact · version · features"]
+    FORECAST["Forecasting Model\nvalidation-selected Ridge / GBM\nper horizon, past-only features\nglucose(t+30/60/90/120m)"]
+  end
+
+  RISK["Risk Assessment & Alerts\nconfigurable thresholds · flags · levels"]
+  API["FastAPI Backend\n/api/patients/{id}/predict\n/api/demo/advance · OpenAPI /docs"]
+  DASH["React Dashboard\n10 views · Recharts · Tailwind · Lucide"]
+
+  EHR --> PREP
+  CGM --> PREP
+  PREP -->|features/rows| TWIN
+  PREP -.->|train split| TRAIN
+  PREP -.->|artifacts| STORE
+  TRAIN -.->|persist joblib| REG
+  TWIN <-->|observed + predicted| STORE
+  REG -.->|load artifacts| FORECAST
+  TWIN -->|latest valid window| FORECAST
+  FORECAST -->|trajectory| RISK
+  FORECAST --> API
+  RISK -->|flags| API
+  API -->|REST JSON| DASH

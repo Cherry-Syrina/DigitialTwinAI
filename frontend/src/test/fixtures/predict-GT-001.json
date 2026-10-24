@@ -1,0 +1,109 @@
+{
+  "patient_id": "GT-001",
+  "data_label": "synthetic",
+  "generated_at": "2026-10-18T13:55:44+00:00",
+  "horizon_minutes": 60,
+  "predicted_glucose_mg_dl": 160.4,
+  "prediction_timestamp": "2026-09-07T07:55:00",
+  "current_glucose_mg_dl": 124.5,
+  "trajectory": [
+    {
+      "timestamp": "2026-09-07T07:25:00",
+      "predicted_glucose_mg_dl": 130.9,
+      "horizon_minutes": 30,
+      "source": "model_prediction"
+    },
+    {
+      "timestamp": "2026-09-07T07:55:00",
+      "predicted_glucose_mg_dl": 160.4,
+      "horizon_minutes": 60,
+      "source": "model_prediction"
+    },
+    {
+      "timestamp": "2026-09-07T08:25:00",
+      "predicted_glucose_mg_dl": 157.6,
+      "horizon_minutes": 90,
+      "source": "model_prediction"
+    },
+    {
+      "timestamp": "2026-09-07T08:55:00",
+      "predicted_glucose_mg_dl": 153.6,
+      "horizon_minutes": 120,
+      "source": "model_prediction"
+    }
+  ],
+  "risk": {
+    "level": "none",
+    "label": "In expected range",
+    "flags": [],
+    "thresholds": {
+      "unit": "mg/dL",
+      "hypo_low_mg_dl": 70,
+      "hypo_critical_mg_dl": 54,
+      "hyper_high_mg_dl": 180,
+      "hyper_critical_mg_dl": 250,
+      "disclaimer": "Configurable demonstration thresholds only. These values are NOT clinically validated and must not be used for diagnosis or treatment decisions. Real clinical use requires validation and oversight by a qualified clinician."
+    },
+    "assessed_values_count": 5,
+    "predicted_min_mg_dl": 124.5,
+    "predicted_max_mg_dl": 160.4
+  },
+  "model": {
+    "version": "1.0.0",
+    "type": "gradient_boosting",
+    "framework": "scikit-learn",
+    "input_window": {
+      "window_start": "2026-09-07 06:00:00",
+      "window_end": "2026-09-07 06:55:00",
+      "window_rows": 12,
+      "static_features": {
+        "age": 58,
+        "bmi": 28.9,
+        "years_since_diagnosis": 9,
+        "hba1c_pct": 6.7
+      },
+      "context_hours_available": 24
+    },
+    "available_horizons_minutes": [
+      30,
+      60,
+      90,
+      120
+    ]
+  },
+  "source": "model_prediction",
+  "simulated_time": "2026-09-07 06:55:00",
+  "disclaimer": "Prediction generated from synthetic data by an unvalidated research prototype. Not a medical device. Not for clinical decision-making.",
+  "feature_contributions": [
+    {
+      "feature": "hour_cos",
+      "contribution": 29,
+      "relative_share_pct": 51.5
+    },
+    {
+      "feature": "minutes_since_meal",
+      "contribution": 23,
+      "relative_share_pct": 40.9
+    },
+    {
+      "feature": "hour_sin",
+      "contribution": 2.9,
+      "relative_share_pct": 5.2
+    },
+    {
+      "feature": "glucose_roll_std_30m",
+      "contribution": 0.5,
+      "relative_share_pct": 0.9
+    },
+    {
+      "feature": "heart_rate_last_60m",
+      "contribution": 0.5,
+      "relative_share_pct": 0.9
+    },
+    {
+      "feature": "glucose_slope_60m",
+      "contribution": 0.4,
+      "relative_share_pct": 0.7
+    }
+  ]
+}

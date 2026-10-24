@@ -1,0 +1,50 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.pytest_tmp/
+.pytest_db/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local doctor-entered SQLite data (created at runtime; never commit)
+data/*.db
+data/*.db-wal
+data/*.db-shm
+data/*.sqlite
+data/*.sqlite3
+data/*.sqlite-wal
+data/*.sqlite-shm
+data/*.sqlite3-wal
+data/*.sqlite3-shm
+
+# Node
+node_modules/
+frontend/dist/
+frontend/coverage/
+.vite/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Reproducible inputs and inference artifacts remain trackable. Keep the
+# generated synthetic dataset and trained model/metrics files available so the
+# demo can run without an initial data-generation/training step.
+
+# Logs
+*.log
+logs/

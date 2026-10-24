@@ -1,0 +1,93 @@
+{
+  "patient_id": "GT-001",
+  "name": "Synthetic Patient 01",
+  "age": 58,
+  "sex": "F",
+  "diabetes_type": "Type 2",
+  "years_since_diagnosis": 9,
+  "height_cm": 160,
+  "weight_kg": 74,
+  "bmi": 28.9,
+  "medical_history": [
+    "Hypertension",
+    "Hyperlipidemia"
+  ],
+  "current_medications": [
+    "Metformin 500mg",
+    "Lisinopril 10mg"
+  ],
+  "family_history": "Mother - Type 2 diabetes",
+  "smoking_status": "Never",
+  "activity_level": "Moderate",
+  "ehr_records": [
+    {
+      "record_id": "EHR-0004",
+      "patient_id": "GT-001",
+      "record_date": "2026-02-27",
+      "record_type": "Annual review",
+      "hba1c_pct": 7.2,
+      "systolic_bp": 197,
+      "diastolic_bp": 77,
+      "ldl_mg_dl": 103,
+      "medications": "Metformin 500mg|Lisinopril 10mg",
+      "clinician_note": "Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.",
+      "data_label": "synthetic"
+    },
+    {
+      "record_id": "EHR-0003",
+      "patient_id": "GT-001",
+      "record_date": "2026-01-07",
+      "record_type": "Lab panel",
+      "hba1c_pct": 7.6,
+      "systolic_bp": 201,
+      "diastolic_bp": 73,
+      "ldl_mg_dl": 126,
+      "medications": "Metformin 500mg|Lisinopril 10mg",
+      "clinician_note": "Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.",
+      "data_label": "synthetic"
+    },
+    {
+      "record_id": "EHR-0002",
+      "patient_id": "GT-001",
+      "record_date": "2025-10-06",
+      "record_type": "Annual review",
+      "hba1c_pct": 7.5,
+      "systolic_bp": 204,
+      "diastolic_bp": 83,
+      "ldl_mg_dl": 119,
+      "medications": "Metformin 500mg|Lisinopril 10mg",
+      "clinician_note": "Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.",
+      "data_label": "synthetic"
+    },
+    {
+      "record_id": "EHR-0001",
+      "patient_id": "GT-001",
+      "record_date": "2025-10-04",
+      "record_type": "Annual review",
+      "hba1c_pct": 7.3,
+      "systolic_bp": 187,
+      "diastolic_bp": 79,
+      "ldl_mg_dl": 111,
+      "medications": "Metformin 500mg|Lisinopril 10mg",
+      "clinician_note": "Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.",
+      "data_label": "synthetic"
+    }
+  ],
+  "glucose_summaries": [
+    {
+      "patient_id": "GT-001",
+      "summary_period": "previous_90_days",
+      "summary_end_date": "2026-09-03",
+      "mean_glucose_mg_dl": 137.7,
+      "std_glucose_mg_dl": 12.2,
+      "time_in_range_pct": 100,
+      "time_above_range_pct": 0,
+      "time_below_range_pct": 0,
+      "readings_count": 787,
+      "hba1c_pct": 6.7,
+      "data_label": "synthetic"
+    }
+  ],
+  "data_label": "synthetic",
+  "disclaimer": "All data and predictions in this API come from explicitly synthetic data and an unvalidated research prototype. Not a medical device. Not for clinical use."
+}

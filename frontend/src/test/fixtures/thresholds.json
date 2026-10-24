@@ -1,0 +1,8 @@
+{
+  "unit": "mg/dL",
+  "hypo_low_mg_dl": 70,
+  "hypo_critical_mg_dl": 54,
+  "hyper_high_mg_dl": 180,
+  "hyper_critical_mg_dl": 250,
+  "disclaimer": "Configurable demonstration thresholds only. These values are NOT clinically validated and must not be used for diagnosis or treatment decisions. Real clinical use requires validation and oversight by a qualified clinician."
+}

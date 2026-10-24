@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "service": "GlucoTwin AI API",
+  "api_version": "1.0.0",
+  "model_loaded": true,
+  "model_horizons_minutes": [
+    30,
+    60,
+    90,
+    120
+  ],
+  "dataset_patients": 8,
+  "data_source": "synthetic dataset (data/synthetic)",
+  "disclaimer": "All data and predictions in this API come from explicitly synthetic data and an unvalidated research prototype. Not a medical device. Not for clinical use."
+}

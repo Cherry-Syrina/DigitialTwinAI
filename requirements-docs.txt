@@ -1,0 +1,2 @@
+# Docs/tooling extras (optional, only needed to render the architecture diagram)
+matplotlib==3.11.2

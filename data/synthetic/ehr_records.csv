@@ -1,0 +1,37 @@
+record_id,patient_id,record_date,record_type,hba1c_pct,systolic_bp,diastolic_bp,ldl_mg_dl,medications,clinician_note,data_label
+EHR-0001,GT-001,2025-10-04,Annual review,7.3,187,79,111,Metformin 500mg|Lisinopril 10mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0002,GT-001,2025-10-06,Annual review,7.5,204,83,119,Metformin 500mg|Lisinopril 10mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0003,GT-001,2026-01-07,Lab panel,7.6,201,73,126,Metformin 500mg|Lisinopril 10mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0004,GT-001,2026-02-27,Annual review,7.2,197,77,103,Metformin 500mg|Lisinopril 10mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0005,GT-002,2025-04-30,Lab panel,6.6,195,81,165,Metformin 1000mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0006,GT-002,2025-10-09,Outpatient visit,6.4,188,73,132,Metformin 1000mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0007,GT-002,2026-01-17,Lab panel,6.5,185,73,132,Metformin 1000mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0008,GT-002,2026-03-01,Outpatient visit,6.4,196,74,123,Metformin 1000mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0009,GT-002,2026-04-20,Annual review,6.2,199,79,133,Metformin 1000mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0010,GT-002,2026-05-23,Lab panel,6.1,194,82,86,Metformin 1000mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0011,GT-003,2025-10-15,Medication review,8.3,197,84,81,Insulin glargine 18U|Metformin 500mg|Atorvastatin 20mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0012,GT-003,2025-11-04,Medication review,7.9,209,82,135,Insulin glargine 18U|Metformin 500mg|Atorvastatin 20mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0013,GT-003,2025-11-25,Medication review,7.9,200,83,114,Insulin glargine 18U|Metformin 500mg|Atorvastatin 20mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0014,GT-003,2026-03-02,Outpatient visit,7.6,197,81,121,Insulin glargine 18U|Metformin 500mg|Atorvastatin 20mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0015,GT-004,2025-05-25,Lab panel,7.2,202,74,110,Insulin pump therapy|Levothyroxine 75mcg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0016,GT-004,2025-10-04,Lab panel,7.0,189,81,108,Insulin pump therapy|Levothyroxine 75mcg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0017,GT-004,2025-11-26,Annual review,6.9,202,82,116,Insulin pump therapy|Levothyroxine 75mcg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0018,GT-004,2026-01-10,Outpatient visit,6.8,198,68,86,Insulin pump therapy|Levothyroxine 75mcg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0019,GT-005,2025-05-21,Annual review,6.0,187,82,97,No medications currently,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0020,GT-005,2025-08-24,Annual review,5.9,182,76,136,No medications currently,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0021,GT-005,2025-09-05,Medication review,5.6,192,74,86,No medications currently,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0022,GT-005,2026-04-26,Lab panel,5.8,186,79,118,No medications currently,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0023,GT-005,2026-05-19,Outpatient visit,5.9,182,79,123,No medications currently,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0024,GT-006,2025-06-17,Outpatient visit,8.0,197,72,109,Insulin NPH 12U|Amlodipine 5mg|Metformin 500mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0025,GT-006,2025-06-20,Medication review,7.9,200,69,96,Insulin NPH 12U|Amlodipine 5mg|Metformin 500mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0026,GT-006,2025-08-20,Medication review,8.0,209,90,182,Insulin NPH 12U|Amlodipine 5mg|Metformin 500mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0027,GT-006,2025-10-30,Outpatient visit,8.0,185,80,100,Insulin NPH 12U|Amlodipine 5mg|Metformin 500mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0028,GT-006,2026-01-10,Medication review,7.8,197,77,141,Insulin NPH 12U|Amlodipine 5mg|Metformin 500mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0029,GT-007,2025-05-31,Medication review,5.2,188,89,121,Oral contraceptive,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0030,GT-007,2025-08-08,Medication review,5.3,179,72,102,Oral contraceptive,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0031,GT-007,2025-11-20,Annual review,5.4,181,83,98,Oral contraceptive,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0032,GT-007,2026-04-21,Medication review,5.2,187,78,104,Oral contraceptive,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0033,GT-008,2025-04-20,Outpatient visit,7.1,213,79,115,Metformin 1000mg|Glimepiride 2mg|Losartan 50mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0034,GT-008,2025-06-10,Annual review,7.3,211,79,109,Metformin 1000mg|Glimepiride 2mg|Losartan 50mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0035,GT-008,2025-06-17,Annual review,7.3,213,79,91,Metformin 1000mg|Glimepiride 2mg|Losartan 50mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic
+EHR-0036,GT-008,2025-11-16,Outpatient visit,6.8,214,88,114,Metformin 1000mg|Glimepiride 2mg|Losartan 50mg,Synthetic record - generated for demonstration. Reviewed glucose management; adherence discussed.,synthetic

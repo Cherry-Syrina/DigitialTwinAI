@@ -1,0 +1,90 @@
+[
+  {
+    "patient_id": "GT-001",
+    "name": "Synthetic Patient 01",
+    "age": 58,
+    "sex": "F",
+    "diabetes_type": "Type 2",
+    "latest_glucose_mg_dl": 132.4,
+    "latest_reading_time": "2026-09-07 23:55:00",
+    "sensor_rows": 2016,
+    "data_label": "synthetic"
+  },
+  {
+    "patient_id": "GT-002",
+    "name": "Synthetic Patient 02",
+    "age": 44,
+    "sex": "M",
+    "diabetes_type": "Type 2",
+    "latest_glucose_mg_dl": 110.7,
+    "latest_reading_time": "2026-09-07 23:55:00",
+    "sensor_rows": 2016,
+    "data_label": "synthetic"
+  },
+  {
+    "patient_id": "GT-003",
+    "name": "Synthetic Patient 03",
+    "age": 67,
+    "sex": "F",
+    "diabetes_type": "Type 2",
+    "latest_glucose_mg_dl": 141.6,
+    "latest_reading_time": "2026-09-07 23:55:00",
+    "sensor_rows": 2016,
+    "data_label": "synthetic"
+  },
+  {
+    "patient_id": "GT-004",
+    "name": "Synthetic Patient 04",
+    "age": 35,
+    "sex": "M",
+    "diabetes_type": "Type 1",
+    "latest_glucose_mg_dl": 127.3,
+    "latest_reading_time": "2026-09-07 23:55:00",
+    "sensor_rows": 2016,
+    "data_label": "synthetic"
+  },
+  {
+    "patient_id": "GT-005",
+    "name": "Synthetic Patient 05",
+    "age": 52,
+    "sex": "F",
+    "diabetes_type": "Prediabetes",
+    "latest_glucose_mg_dl": 99.7,
+    "latest_reading_time": "2026-09-07 23:55:00",
+    "sensor_rows": 2016,
+    "data_label": "synthetic"
+  },
+  {
+    "patient_id": "GT-006",
+    "name": "Synthetic Patient 06",
+    "age": 71,
+    "sex": "M",
+    "diabetes_type": "Type 2",
+    "latest_glucose_mg_dl": 137.4,
+    "latest_reading_time": "2026-09-07 23:55:00",
+    "sensor_rows": 2016,
+    "data_label": "synthetic"
+  },
+  {
+    "patient_id": "GT-007",
+    "name": "Synthetic Patient 07",
+    "age": 29,
+    "sex": "F",
+    "diabetes_type": "No diabetes",
+    "latest_glucose_mg_dl": 81.5,
+    "latest_reading_time": "2026-09-07 23:55:00",
+    "sensor_rows": 2016,
+    "data_label": "synthetic"
+  },
+  {
+    "patient_id": "GT-008",
+    "name": "Synthetic Patient 08",
+    "age": 63,
+    "sex": "M",
+    "diabetes_type": "Type 2",
+    "latest_glucose_mg_dl": 136.2,
+    "latest_reading_time": "2026-09-07 23:55:00",
+    "sensor_rows": 2016,
+    "data_label": "synthetic"
+  }
+]

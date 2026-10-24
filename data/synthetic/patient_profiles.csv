@@ -1,0 +1,9 @@
+patient_id,name,age,sex,diabetes_type,years_since_diagnosis,height_cm,weight_kg,bmi,medical_history,current_medications,family_history,smoking_status,activity_level,data_label
+GT-001,Synthetic Patient 01,58,F,Type 2,9,160.0,74.0,28.9,Hypertension|Hyperlipidemia,Metformin 500mg|Lisinopril 10mg,Mother - Type 2 diabetes,Never,Moderate,synthetic
+GT-002,Synthetic Patient 02,44,M,Type 2,3,176.0,86.0,27.8,Obesity (BMI 27.9),Metformin 1000mg,Father - Hypertension,Former,Low,synthetic
+GT-003,Synthetic Patient 03,67,F,Type 2,15,154.0,66.0,27.8,Hypertension|Diabetic neuropathy|Hyperlipidemia,Insulin glargine 18U|Metformin 500mg|Atorvastatin 20mg,Sibling - Type 2 diabetes,Never,Low,synthetic
+GT-004,Synthetic Patient 04,35,M,Type 1,12,181.0,73.0,22.3,Hypothyroidism,Insulin pump therapy|Levothyroxine 75mcg,None known,Never,High,synthetic
+GT-005,Synthetic Patient 05,52,F,Prediabetes,1,165.0,79.0,29.0,Gestational diabetes history,No medications currently,Father - Type 2 diabetes,Never,High,synthetic
+GT-006,Synthetic Patient 06,71,M,Type 2,20,170.0,70.0,24.2,Hypertension|Chronic kidney disease (stage 2)|Osteoarthritis,Insulin NPH 12U|Amlodipine 5mg|Metformin 500mg,None known,Former,Low,synthetic
+GT-007,Synthetic Patient 07,29,F,No diabetes,0,168.0,62.0,22.0,No conditions recorded,Oral contraceptive,None known,Never,High,synthetic
+GT-008,Synthetic Patient 08,63,M,Type 2,7,174.0,91.0,30.1,Hypertension|Obesity (BMI 30.1)|Sleep apnea,Metformin 1000mg|Glimepiride 2mg|Losartan 50mg,Brother - Type 2 diabetes,Never,Low,synthetic

@@ -1,0 +1,979 @@
+{
+  "patient_id": "GT-001",
+  "unit": "mg/dL",
+  "readings": [
+    {
+      "timestamp": "2026-09-06 22:55:00",
+      "glucose_mg_dl": 132.1,
+      "heart_rate_bpm": 61.2,
+      "steps_5min": 0,
+      "sleep_minutes": 0,
+      "meal_event": 0,
+      "minutes_since_meal": 210,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-06 23:00:00",
+      "glucose_mg_dl": 127.8,
+      "heart_rate_bpm": 59.6,
+      "steps_5min": 0,
+      "sleep_minutes": 0,
+      "meal_event": 0,
+      "minutes_since_meal": 215,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-06 23:05:00",
+      "glucose_mg_dl": 127.3,
+      "heart_rate_bpm": 64.3,
+      "steps_5min": 0,
+      "sleep_minutes": 0,
+      "meal_event": 0,
+      "minutes_since_meal": 220,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-06 23:10:00",
+      "glucose_mg_dl": 125.8,
+      "heart_rate_bpm": 66.6,
+      "steps_5min": 0,
+      "sleep_minutes": 0,
+      "meal_event": 0,
+      "minutes_since_meal": 225,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-06 23:15:00",
+      "glucose_mg_dl": 129.6,
+      "heart_rate_bpm": 60.6,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 230,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-06 23:20:00",
+      "glucose_mg_dl": 126.4,
+      "heart_rate_bpm": 64.1,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 235,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-06 23:25:00",
+      "glucose_mg_dl": 130.7,
+      "heart_rate_bpm": 60.4,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 240,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-06 23:30:00",
+      "glucose_mg_dl": 130.3,
+      "heart_rate_bpm": 62.7,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 245,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-06 23:35:00",
+      "glucose_mg_dl": 127.2,
+      "heart_rate_bpm": 61.5,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 250,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-06 23:40:00",
+      "glucose_mg_dl": 125.8,
+      "heart_rate_bpm": 65.3,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 255,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-06 23:45:00",
+      "glucose_mg_dl": 124.3,
+      "heart_rate_bpm": 61.5,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 260,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-06 23:50:00",
+      "glucose_mg_dl": 121.9,
+      "heart_rate_bpm": 66.6,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 265,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-06 23:55:00",
+      "glucose_mg_dl": 123.1,
+      "heart_rate_bpm": 62.9,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 270,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 00:00:00",
+      "glucose_mg_dl": 120.9,
+      "heart_rate_bpm": 61.7,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 275,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 00:05:00",
+      "glucose_mg_dl": 116.8,
+      "heart_rate_bpm": 59.8,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 280,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 00:10:00",
+      "glucose_mg_dl": 117.7,
+      "heart_rate_bpm": 64.4,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 285,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 00:15:00",
+      "glucose_mg_dl": 115,
+      "heart_rate_bpm": 66.3,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 290,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 00:20:00",
+      "glucose_mg_dl": 115.3,
+      "heart_rate_bpm": 64.5,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 295,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 00:25:00",
+      "glucose_mg_dl": 115.1,
+      "heart_rate_bpm": 70.5,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 300,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 00:30:00",
+      "glucose_mg_dl": 115,
+      "heart_rate_bpm": 68.2,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 305,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 00:35:00",
+      "glucose_mg_dl": 121.8,
+      "heart_rate_bpm": 63.4,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 310,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 00:40:00",
+      "glucose_mg_dl": 122.7,
+      "heart_rate_bpm": 63.5,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 315,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 00:45:00",
+      "glucose_mg_dl": 123.8,
+      "heart_rate_bpm": 66,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 320,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 00:50:00",
+      "glucose_mg_dl": 119.9,
+      "heart_rate_bpm": 61.9,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 325,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 00:55:00",
+      "glucose_mg_dl": 119.3,
+      "heart_rate_bpm": 68,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 330,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 01:00:00",
+      "glucose_mg_dl": 120.9,
+      "heart_rate_bpm": 65.8,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 335,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 01:05:00",
+      "glucose_mg_dl": 119.3,
+      "heart_rate_bpm": 65.5,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 340,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 01:10:00",
+      "glucose_mg_dl": 122.5,
+      "heart_rate_bpm": 67,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 345,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 01:15:00",
+      "glucose_mg_dl": 120.1,
+      "heart_rate_bpm": 70.1,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 350,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 01:20:00",
+      "glucose_mg_dl": 120.3,
+      "heart_rate_bpm": 65.5,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 355,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 01:25:00",
+      "glucose_mg_dl": 119.8,
+      "heart_rate_bpm": null,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 360,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 01:30:00",
+      "glucose_mg_dl": 121.1,
+      "heart_rate_bpm": 69.7,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 365,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 01:35:00",
+      "glucose_mg_dl": 120.3,
+      "heart_rate_bpm": 68.1,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 370,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 01:40:00",
+      "glucose_mg_dl": 120.5,
+      "heart_rate_bpm": 64.4,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 375,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 01:45:00",
+      "glucose_mg_dl": 120.8,
+      "heart_rate_bpm": 65.4,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 380,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 01:50:00",
+      "glucose_mg_dl": 119.9,
+      "heart_rate_bpm": 66,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 385,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 01:55:00",
+      "glucose_mg_dl": 122,
+      "heart_rate_bpm": 66.7,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 390,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 02:00:00",
+      "glucose_mg_dl": 123.2,
+      "heart_rate_bpm": 61.7,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 395,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 02:05:00",
+      "glucose_mg_dl": 123.4,
+      "heart_rate_bpm": 61.2,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 400,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 02:10:00",
+      "glucose_mg_dl": 122.8,
+      "heart_rate_bpm": 63.2,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 405,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 02:15:00",
+      "glucose_mg_dl": 125.3,
+      "heart_rate_bpm": 63.2,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 410,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 02:20:00",
+      "glucose_mg_dl": 124.9,
+      "heart_rate_bpm": 64.2,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 415,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 02:25:00",
+      "glucose_mg_dl": 124.5,
+      "heart_rate_bpm": 68.1,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 420,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 02:30:00",
+      "glucose_mg_dl": 125.1,
+      "heart_rate_bpm": 65.8,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 425,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 02:35:00",
+      "glucose_mg_dl": 129.6,
+      "heart_rate_bpm": 67.2,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 430,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 02:40:00",
+      "glucose_mg_dl": 125.9,
+      "heart_rate_bpm": 62.8,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 435,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 02:45:00",
+      "glucose_mg_dl": 128.1,
+      "heart_rate_bpm": 65.3,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 440,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 02:50:00",
+      "glucose_mg_dl": 123.6,
+      "heart_rate_bpm": 68.2,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 445,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 02:55:00",
+      "glucose_mg_dl": 125,
+      "heart_rate_bpm": 68.4,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 450,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 03:00:00",
+      "glucose_mg_dl": 129.5,
+      "heart_rate_bpm": 64.7,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 455,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 03:05:00",
+      "glucose_mg_dl": 130.7,
+      "heart_rate_bpm": 67.5,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 460,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 03:10:00",
+      "glucose_mg_dl": 131,
+      "heart_rate_bpm": 73.7,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 465,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 03:15:00",
+      "glucose_mg_dl": 129.5,
+      "heart_rate_bpm": 67,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 470,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 03:20:00",
+      "glucose_mg_dl": 129.9,
+      "heart_rate_bpm": 65.1,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 475,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 03:25:00",
+      "glucose_mg_dl": 129.6,
+      "heart_rate_bpm": 66.7,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 480,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 03:30:00",
+      "glucose_mg_dl": 128.1,
+      "heart_rate_bpm": 67.5,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 485,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 03:35:00",
+      "glucose_mg_dl": 128.2,
+      "heart_rate_bpm": 66.8,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 490,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 03:40:00",
+      "glucose_mg_dl": 129.6,
+      "heart_rate_bpm": 67.3,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 495,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 03:45:00",
+      "glucose_mg_dl": 128.5,
+      "heart_rate_bpm": 63,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 500,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 03:50:00",
+      "glucose_mg_dl": 126,
+      "heart_rate_bpm": 72.1,
+      "steps_5min": 258,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 505,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 03:55:00",
+      "glucose_mg_dl": 122.4,
+      "heart_rate_bpm": 74.4,
+      "steps_5min": 258,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 510,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 04:00:00",
+      "glucose_mg_dl": 123.5,
+      "heart_rate_bpm": 74.5,
+      "steps_5min": 258,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 515,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 04:05:00",
+      "glucose_mg_dl": 124.6,
+      "heart_rate_bpm": 73.4,
+      "steps_5min": 258,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 520,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 04:10:00",
+      "glucose_mg_dl": 124.5,
+      "heart_rate_bpm": 74.6,
+      "steps_5min": 258,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 525,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 04:15:00",
+      "glucose_mg_dl": 125.9,
+      "heart_rate_bpm": 75.4,
+      "steps_5min": 258,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 530,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 04:20:00",
+      "glucose_mg_dl": 126.3,
+      "heart_rate_bpm": 78,
+      "steps_5min": 258,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 535,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 04:25:00",
+      "glucose_mg_dl": 127.5,
+      "heart_rate_bpm": 75.1,
+      "steps_5min": 258,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 540,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 04:30:00",
+      "glucose_mg_dl": 129.7,
+      "heart_rate_bpm": 69,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 545,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 04:35:00",
+      "glucose_mg_dl": 131,
+      "heart_rate_bpm": 66.3,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 550,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 04:40:00",
+      "glucose_mg_dl": 131.2,
+      "heart_rate_bpm": 69.6,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 555,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 04:45:00",
+      "glucose_mg_dl": 138.3,
+      "heart_rate_bpm": 69.4,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 560,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 04:50:00",
+      "glucose_mg_dl": 137.9,
+      "heart_rate_bpm": 70.9,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 565,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 04:55:00",
+      "glucose_mg_dl": 137.4,
+      "heart_rate_bpm": 70.5,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 570,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 05:00:00",
+      "glucose_mg_dl": 138.3,
+      "heart_rate_bpm": 70.1,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 575,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 05:05:00",
+      "glucose_mg_dl": 138.6,
+      "heart_rate_bpm": 68.1,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 580,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 05:10:00",
+      "glucose_mg_dl": 134.8,
+      "heart_rate_bpm": 69,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 585,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 05:15:00",
+      "glucose_mg_dl": 137.8,
+      "heart_rate_bpm": 71.6,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 590,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 05:20:00",
+      "glucose_mg_dl": 137.2,
+      "heart_rate_bpm": 66.4,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 595,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 05:25:00",
+      "glucose_mg_dl": 134.2,
+      "heart_rate_bpm": 66.4,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 600,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 05:30:00",
+      "glucose_mg_dl": 137.2,
+      "heart_rate_bpm": 69,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 605,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 05:35:00",
+      "glucose_mg_dl": 138.2,
+      "heart_rate_bpm": 69.7,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 610,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 05:40:00",
+      "glucose_mg_dl": 134.5,
+      "heart_rate_bpm": 65.8,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 615,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 05:45:00",
+      "glucose_mg_dl": 138.6,
+      "heart_rate_bpm": 68.3,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 620,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 05:50:00",
+      "glucose_mg_dl": 139.3,
+      "heart_rate_bpm": 68.3,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 625,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 05:55:00",
+      "glucose_mg_dl": 138.1,
+      "heart_rate_bpm": 61.9,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 630,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 06:00:00",
+      "glucose_mg_dl": 140.9,
+      "heart_rate_bpm": 68,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 635,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 06:05:00",
+      "glucose_mg_dl": 139.7,
+      "heart_rate_bpm": 68.1,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 640,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 06:10:00",
+      "glucose_mg_dl": 138.2,
+      "heart_rate_bpm": 68,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 645,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 06:15:00",
+      "glucose_mg_dl": 135.4,
+      "heart_rate_bpm": 72.6,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 650,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 06:20:00",
+      "glucose_mg_dl": 136,
+      "heart_rate_bpm": 64.7,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 655,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 06:25:00",
+      "glucose_mg_dl": 136.1,
+      "heart_rate_bpm": 65.9,
+      "steps_5min": 0,
+      "sleep_minutes": 5,
+      "meal_event": 0,
+      "minutes_since_meal": 660,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 06:30:00",
+      "glucose_mg_dl": 135.1,
+      "heart_rate_bpm": 60.5,
+      "steps_5min": 0,
+      "sleep_minutes": 0,
+      "meal_event": 0,
+      "minutes_since_meal": 665,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 06:35:00",
+      "glucose_mg_dl": 132.3,
+      "heart_rate_bpm": 66.7,
+      "steps_5min": 0,
+      "sleep_minutes": 0,
+      "meal_event": 0,
+      "minutes_since_meal": 670,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 06:40:00",
+      "glucose_mg_dl": 132.1,
+      "heart_rate_bpm": 67,
+      "steps_5min": 0,
+      "sleep_minutes": 0,
+      "meal_event": 0,
+      "minutes_since_meal": 675,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 06:45:00",
+      "glucose_mg_dl": 131.4,
+      "heart_rate_bpm": 66.6,
+      "steps_5min": 0,
+      "sleep_minutes": 0,
+      "meal_event": 0,
+      "minutes_since_meal": 680,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 06:50:00",
+      "glucose_mg_dl": 127.8,
+      "heart_rate_bpm": 71.2,
+      "steps_5min": 0,
+      "sleep_minutes": 0,
+      "meal_event": 0,
+      "minutes_since_meal": 685,
+      "source": "synthetic_sensor_feed"
+    },
+    {
+      "timestamp": "2026-09-07 06:55:00",
+      "glucose_mg_dl": 124.5,
+      "heart_rate_bpm": 70.3,
+      "steps_5min": 0,
+      "sleep_minutes": 0,
+      "meal_event": 0,
+      "minutes_since_meal": 690,
+      "source": "synthetic_sensor_feed"
+    }
+  ],
+  "sample_interval_minutes": 5,
+  "data_label": "synthetic",
+  "disclaimer": "All data and predictions in this API come from explicitly synthetic data and an unvalidated research prototype. Not a medical device. Not for clinical use."
+}

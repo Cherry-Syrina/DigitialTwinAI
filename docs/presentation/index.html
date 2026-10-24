@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>GlucoTwin AI — 3-minute pitch</title>
+<style>
+  :root { --navy:#0f2a43; --teal:#0d9488; --amber:#b45309; --slate:#334155; --bg:#eef2f5; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body {
+    background:#dfe6ec; font-family:"Segoe UI",-apple-system,Roboto,Arial,sans-serif;
+    display:none;
+  }
+  body.ready { display:block; }
+
+  /* Print: each .slide lands on its own page */
+  @page { size:16in 9in; margin:0; }
+  @media print {
+    body { background:#fff; }
+    .controls, .hint { display:none !important; }
+    .slide { break-after:page; box-shadow:none; margin:0; }
+  }
+
+  /* Screen navigation */
+  .controls { position:fixed; left:24px; right:24px; top:50%; transform:translateY(-50%);
+    display:flex; justify-content:space-between; z-index:50; pointer-events:none; }
+  .controls button { pointer-events:auto; width:54px; height:54px; border-radius:999px; border:none;
+    background:rgba(15,42,67,.82); color:#fff; font-size:24px; cursor:pointer; box-shadow:0 6px 18px rgba(0,0,0,.25); }
+  .controls button:hover { background:var(--teal); }
+  .hint { position:fixed; bottom:16px; left:0; right:0; text-align:center; font-size:13px; color:#5b6b7d; z-index:50; }
+  .progress { position:fixed; top:0; left:0; height:5px; background:var(--teal); z-index:60; transition:width .25s ease; }
+
+  .slide {
+    width:16in; height:9in; margin:20px auto; overflow:hidden; position:relative;
+    background:#ffffff; padding:42px 56px; box-shadow:0 10px 30px rgba(0,0,0,.18);
+    display:flex; flex-direction:column;
+  }
+  .slide.padless { padding:0; }
+  .kicker { color:var(--teal); font-size:14px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; margin-bottom:8px; }
+  .brand, .brand-dark { display:flex; align-items:center; gap:10px; color:var(--navy); font-weight:800; letter-spacing:.05em; }
+  .brand span, .brand-dark span { color:var(--teal); }
+  .brand-dark { color:#fff; }
+  .h1 { color:var(--navy); font-size:44px; line-height:1.12; font-weight:800; margin-bottom:10px; }
+  .lead { color:var(--slate); font-size:19px; line-height:1.55; max-width:54rem; }
+  .accent { color:var(--teal); }
+  .badge { display:inline-block; padding:5px 12px; border-radius:999px; font-size:13px; font-weight:700;
+    background:var(--teal); color:#fff; }
+  .admonition { margin-top:18px; padding:12px 16px; border-radius:10px; border:1px solid #f3cd8c;
+    background:#fef3c7; color:#7c5208; font-size:15px; }
+
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:26px; margin-top:22px; }
+  .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:22px; }
+  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin-top:24px; }
+  .card { border:1px solid #dbe4ea; border-radius:14px; padding:20px 22px; background:#fafcfd; }
+  .card .num { color:var(--teal); font-size:30px; font-weight:800; }
+  .card .lbl { color:var(--slate); font-size:15px; font-weight:600; margin:2px 0 10px; }
+  .card ul { list-style:none; }
+  .card li { font-size:14px; color:#55677a; padding:5px 0 5px 18px; position:relative; }
+  .card li::before { content:"▸"; position:absolute; left:0; color:var(--teal); }
+
+  .foot { margin-top:auto; color:#8192a4; font-size:13px; border-top:1px solid #e3eaf0; padding-top:14px; }
+  .chip { display:inline-flex; align-items:center; gap:8px; font-size:14px; font-weight:600;
+    background:#eef6f5; color:var(--navy); border:1px solid #b7e0dc; border-radius:999px; padding:7px 14px; }
+  .table { width:100%; border-collapse:collapse; margin-top:16px; font-size:15px; }
+  .table th { text-align:left; color:var(--navy); padding:9px 12px; background:#eef6f5; font-size:14px; }
+  .table td { padding:9px 12px; border-bottom:1px solid #e3eaf0; color:var(--slate); }
+  .evident { color:var(--teal); font-weight:800; }
+
+  /* Cover */
+  .cover { background:linear-gradient(135deg,#0f2a43 0%,#10344f 55%,#0d9488 130%); justify-content:center; text-align:center; align-items:center; }
+  .cover .h1 { color:#fff; font-size:58px; margin-bottom:14px; }
+  .cover .lead { color:#cfe0eb; margin:0 auto; }
+  .cover .pill { display:inline-block; margin-top:22px; padding:9px 20px; border-radius:999px;
+    background:rgba(255,255,255,.12); color:#d9f3ef; font-size:14px; font-weight:600; border:1px solid rgba(255,255,255,.25); }
+  .cover .hintline { margin-top:26px; color:#7fa0b5; font-size:15px; }
+  .cover .evident { color:#5eead4; }
+
+  /* Diagram slide */
+  .diagram-wrap { display:flex; flex-direction:column; height:100%; }
+  .diagram-wrap img { width:100%; max-height:5.9in; object-fit:contain; margin-top:10px; }
+
+  .highlight-row { display:flex; gap:26px; margin-top:26px; }
+  .hl { flex:1; border-radius:14px; padding:18px 20px; color:#fff; }
+  .hl h3 { font-size:18px; margin-bottom:12px; }
+  .hl.amber { background:#b45309; }
+  .hl.teal { background:#0d9488; }
+  .hl.navy { background:#274060; }
+  .hl ul { list-style:none; }
+  .hl li { font-size:14px; padding:4px 0 4px 18px; position:relative; }
+  .hl li::before { content:"✓"; position:absolute; left:0; color:#c9f2ec; font-weight:700; }
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<div class="controls">
+  <button onclick="go(-1)" aria-label="previous">‹</button>
+  <button onclick="go(1)" aria-label="next">›</button>
+</div>
+<div class="hint">Use ← → arrow keys · Ctrl/Cmd+P to export to PDF</div>
+
+<section class="slide cover">
+  <div class="brand-dark" style="font-size:15px; letter-spacing:.22em; text-transform:uppercase; margin-bottom:6px;">
+    Happiest Health · Digital Twin Challenge
+  </div>
+  <div class="h1" style="color:#fff;">
+    GlucoTwin <span style="color:#5eead4">AI</span>
+  </div>
+  <div class="lead" style="max-width:56rem;">
+    A predictive <b style="color:#fff">digital twin</b> that turns a glucose sensor stream into
+    personalized, forecast-aware risk monitoring for people with diabetes.
+  </div>
+  <div class="pill">Synthetic data · Demo prototype · Not clinically validated</div>
+  <div class="hintline">
+    3-minute pitch — 12 slides · <span class="evident">30/60/90/120-minute glucose forecasts</span> · risk flags
+  </div>
+</section>
+
+<section class="slide">
+  <div class="kicker">01 · Problem</div>
+  <div class="h1">People act on glucose readings that are <span class="accent">already in the past</span>.</div>
+  <p class="lead">Continuous glucose monitors report *today's* value. By the time a person reacts,
+  their glucose has moved on — so decisions are reactive, not preventive.</p>
+  <div class="grid3">
+    <div class="card"><div class="num">5 min</div><div class="lbl">sensor cadence</div>
+      <ul><li>Current value is already 5&nbsp;minutes old</li><li>Trend arrows are coarse</li></ul></div>
+    <div class="card"><div class="num">2–4 h</div><div class="lbl">action lead time</div>
+      <ul><li>Meals/insulin act over hours</li><li>Need to act *before* a rise or drop</li></ul></div>
+    <div class="card"><div class="num">static</div><div class="lbl">thresholds</div>
+      <ul><li>Fixed cut-offs ignore context</li><li>One-size-fits-all risk advice</li></ul></div>
+  </div>
+  <div class="admonition">The gap: no per-patient "living model" that forecasts the near future and
+  translates it into an actionable risk level.</div>
+</section>
+
+<section class="slide">
+  <div class="kicker">02 · Idea</div>
+  <div class="h1">A digital twin that is <span class="accent">you</span> — updated every 5 minutes.</div>
+  <p class="lead">Build a per-patient state (the <b>twin</b>) that ingests live CGM/wearable data,
+  forecasts glucose at four horizons, and flags risk *before* thresholds are crossed.</p>
+  <div class="grid2">
+    <div class="card">
+      <div class="lbl">Per-patient state</div>
+      <ul>
+        <li>Latest sensor window (60&nbsp;min lookback)</li>
+        <li>Static health profile (age, type, HbA1c, BMI)</li>
+        <li>Meal/sleep/activity context</li>
+        <li>Forecast + risk derived from that state</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="lbl">Forecast-aware risk</div>
+      <ul>
+        <li>GBM forecasts at +30/60/90/120&nbsp;min</li>
+        <li>Signals: glucose, insulin, carbs, steps, HR, sleep</li>
+        <li>Risk level &amp; flags from predicted horizon</li>
+        <li>Exports a consult, non-clinical report</li>
+      </ul>
+    </div>
+  </div>
+  <div class="admonition">"Not just *where am I now*, but *where am I heading?*"</div>
+</section>
+
+<section class="slide">
+  <div class="kicker">03 · Architecture</div>
+  <div class="h1">Pipelines, engine, model, API, dashboard.</div>
+  <div class="diagram-wrap">
+    <img src="../architecture/architecture.png" alt="GlucoTwin AI architecture" />
+  </div>
+  <div class="foot">Synthetic data → validation → digital-twin engine → GBM forecaster → risk service →
+  FastAPI → React dashboard. Training artifacts (joblib + metrics) persist in a model registry.</div>
+</section>
+
+<section class="slide">
+  <div class="kicker">04 · The twin engine</div>
+  <div class="h1">A patient's state: <span class="accent">live, windowed, replays</span>.</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="lbl">State snapshot</div>
+      <ul>
+        <li>Replays the sensor stream in 5-min steps</li>
+        <li>Keeps the latest valid 12-row (60&nbsp;min) window</li>
+        <li>Handles dropped readings gracefully with NaN</li>
+        <li>What-if: mutate carb/insulin/sleep and re-forecast</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="lbl">Demo behaviour</div>
+      <ul>
+        <li><b>/demo/advance</b> steps the twin through time</li>
+        <li>Each step re-computes forecast + risk</li>
+        <li>Full provenance: which rows, which features</li>
+        <li>Interactive "Advance (20 min)" button in the UI</li>
+      </ul>
+    </div>
+  </div>
+  <div class="admonition">Deterministic, seeded, reproducible — same twin for the same person every run.</div>
+</section>
+
+<section class="slide">
+  <div class="kicker">05 · Forecasting model</div>
+  <div class="h1">A validation-selected Ridge or GBM per horizon — <span class="accent">and honest baselines</span>.</div>
+  <div class="grid3">
+    <div class="card"><div class="num">4</div><div class="lbl">horizons</div>
+      <ul><li>+30 · +60 · +90 · +120 min</li><li>independent, tuned per horizon</li><li>30 past-only features, as-of summary data</li></ul></div>
+    <div class="card"><div class="num">2</div><div class="lbl">reference baselines</div>
+      <ul><li>persistence (carry-forward)</li><li>Ridge regression</li><li>validation-selected GBM or Ridge</li></ul></div>
+    <div class="card"><div class="num">70/15/15</div><div class="lbl">time-ordered train/validation/test split</div>
+      <ul><li>train on earliest weeks of series</li><li>test on the newest</li><li>no random shuffle — no lookahead</li></ul></div>
+  </div>
+  <div class="foot">Feature engineering documented in <code>docs/features.md</code>; leakage checks are unit-tested.</div>
+</section>
+
+<section class="slide">
+  <div class="kicker">06 · Results (held-out synthetic test)</div>
+  <div class="h1">Selected models beat persistence <span class="accent">on synthetic test data</span>.</div>
+  <table class="table">
+    <tr><th>Horizon</th><th>Selected MAE</th><th>Persistence MAE</th><th>Selected RMSE</th><th>Improvement vs persistence</th></tr>
+    <tr><td>+30 min</td><td class="evident">4.726 mg/dL</td><td>7.141</td><td>6.381</td><td class="evident">33.8%</td></tr>
+    <tr><td>+60 min</td><td class="evident">5.114 mg/dL</td><td>11.004</td><td>6.595</td><td class="evident">53.5%</td></tr>
+    <tr><td>+90 min</td><td class="evident">5.264 mg/dL</td><td>14.234</td><td>6.805</td><td class="evident">63.0%</td></tr>
+    <tr><td>+120 min</td><td class="evident">5.070 mg/dL</td><td>16.449</td><td>6.556</td><td class="evident">69.2%</td></tr>
+  </table>
+  <div class="admonition">On this synthetic test segment the selected forecaster lowers MAE versus persistence;
+  these results do not establish clinical accuracy or real-world coverage.</div>
+</section>
+
+<section class="slide">
+  <div class="kicker">07 · Risk assessment</div>
+  <div class="h1">A risk flag the person can <span class="accent">act on early</span>.</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="lbl">Configurable thresholds</div>
+      <ul>
+        <li>Hypo 70 / critical 54 mg/dL</li>
+        <li>Hyper 180 / critical 250 mg/dL</li>
+        <li>Loaded from JSON — ops-tunable at runtime</li>
+        <li>Risk level: low / medium / high + kind + message</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="lbl">Forecast-driven</div>
+      <ul>
+        <li>Score reviews the *predicted horizon*, not just today</li>
+        <li><b>Flags</b> like hyperglycemia with target time</li>
+        <li>Demo patient GT-003 starts "medium" — visible in-app</li>
+        <li>UI: colour-coded badge + list of flags</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="kicker">08 · Product</div>
+  <div class="h1">One dashboard, seven views.</div>
+  <div class="grid4">
+    <div class="card"><div class="lbl">Overview</div><ul><li>Patient picker + KPI snapshot</li><li>glucose, HbA1c, BMI, risk</li></ul></div>
+    <div class="card"><div class="lbl">Twin Monitor</div><ul><li>live glucose chart</li><li>demo time-advance</li><li>sensor row stream</li></ul></div>
+    <div class="card"><div class="lbl">Prediction &amp; Risk</div><ul><li>forecast bands</li><li>risk badge + flags</li><li>threshold guide</li></ul></div>
+    <div class="card"><div class="lbl">What-if</div><ul><li>mutate carbs/insulin/sleep</li><li>re-run forecast</li><li>compare curves</li></ul></div>
+    <div class="card"><div class="lbl">Profile</div><ul><li>demographics + history</li><li>insulin &amp; HbA1c</li></ul></div>
+    <div class="card"><div class="lbl">Model Info</div><ul><li>metrics table</li><li>versions + features</li></ul></div>
+    <div class="card"><div class="lbl">Doctor View</div><ul><li>patient summary</li><li>exportable report</li><li>synthetic disclaimer</li></ul></div>
+    <div class="card"><div class="lbl">API</div><ul><li>OpenAPI at /docs</li><li>10+ endpoints</li><li>typed schemas</li></ul></div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="kicker">09 · Data &amp; trust</div>
+  <div class="h1">Fully synthetic, fully transparent.</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="lbl">Data pipeline (seeded)</div>
+      <ul>
+        <li>8 profiles · 7 days · 16,128 readings @ 5-min</li>
+        <li>EHR-like records + glucose summaries per patient</li>
+        <li>Realistic missing values injected + handled</li>
+        <li>Seed 42 → reproducible datasets</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="lbl">Trust &amp; verification</div>
+      <ul>
+        <li>90 automated backend tests (pytest)</li>
+        <li>"Synthetic tag" badge throughout the UI</li>
+        <li>Non-clinical disclaimer on every page</li>
+        <li>Model metrics and thresholds inspectable in-app</li>
+      </ul>
+    </div>
+  </div>
+  <div class="admonition">Built for a hackathon proof-of-concept — designed so clinical data could
+  drop in behind the same interface later.</div>
+</section>
+
+<section class="slide">
+  <div class="kicker">10 · What-if · Interactions · Demo Flow</div>
+  <div class="h1">Live demo script — 2 minutes.</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="lbl">Bring the twin to life</div>
+      <ul>
+        <li>Open Twin Monitor → Advance (20 min)</li>
+        <li>Watch the glucose line replay in real time</li>
+        <li>Step to GT-003 → risk badge flips to "medium"</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="lbl">Explain the canary</div>
+      <ul>
+        <li>Prediction &amp; Risk: forecast bands + reason</li>
+        <li>What-if: 6 more insulin → curve bends down</li>
+        <li>Doctor View → Export report (.md)</li>
+      </ul>
+    </div>
+  </div>
+  <div class="highlight-row">
+    <div class="hl amber"><h3>Demo</h3><ul><li>Advance the twin</li><li>Read the risk flags</li><li>Run a what-if</li></ul></div>
+    <div class="hl navy"><h3>Story</h3><ul><li>Forecast beats persistence</li><li>Risk comes from the horizon</li><li>Reproducible everywhere</li></ul></div>
+    <div class="hl teal"><h3>Proof</h3><ul><li>90 backend + 46 frontend tests</li><li>OpenAPI /docs</li><li>Production build</li></ul></div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="kicker">11 · Validation roadmap</div>
+  <div class="h1">Today (proof) → tomorrow (validation).</div>
+  <div class="grid3">
+    <div class="card"><div class="lbl">Now — prototype</div>
+      <ul><li>synthetic data only</li><li>research model</li><li>demo-grade UI</li></ul></div>
+    <div class="card"><div class="lbl">Next — clinical prep</div>
+      <ul><li>real de-identified CGM</li><li>prospective temporal CV</li><li>clinician-informed risk zones</li></ul></div>
+    <div class="card"><div class="lbl">Future — trusted</div>
+      <ul><li>regulatory framing</li><li>audit trails</li><li>DRR + action guidance</li></ul></div>
+  </div>
+  <div class="admonition">The architecture already isolates data → model → risk → UI, so swapping the
+  synthetic feed for real data touches one boundary, not the whole system.</div>
+</section>
+
+<section class="slide cover">
+  <div class="h1" style="color:#fff; font-size:54px;">
+    Thank you — let's bring the <span style="color:#5eead4">twin</span> to life.
+  </div>
+  <p class="lead" style="max-width:50rem;">
+    <b style="color:#fff">GlucoTwin AI</b> · predictive digital twin for diabetes risk monitoring.
+  </p>
+  <div class="pill">github repo · API docs · architecture · presenters' names</div>
+</section>
+
+<script>
+(function () {
+  const slides = Array.from(document.querySelectorAll(".slide"));
+  let i = 0;
+  document.body.classList.add("ready");
+  function show(n) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach((s, idx) => { s.style.display = idx === i ? "flex" : "none"; });
+    document.getElementById("progress").style.width = ((i + 1) / slides.length * 100) + "%";
+  }
+  window.go = (d) => show(i + d);
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight") { e.preventDefault(); show(i + 1); }
+    if (e.key === "ArrowLeft") { e.preventDefault(); show(i - 1); }
+  });
+  show(0);
+})();
+</script>
+</body>
+</html>
